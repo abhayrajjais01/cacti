@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789650088569,
+  "lastUpdate": 1789650343049,
   "repoUrl": "https://github.com/abhayrajjais01/cacti",
   "entries": {
     "Benchmark": [
@@ -36,6 +36,35 @@ window.BENCHMARK_DATA = {
             "range": "±2.16%",
             "unit": "ops/sec",
             "extra": "180 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "luka73",
+            "username": "lukacoff",
+            "email": "lukas.mastilak@stuba.sk"
+          },
+          "committer": {
+            "name": "Rafael Belchior",
+            "username": "RafaelAPB",
+            "email": "RafaelAPB@users.noreply.github.com"
+          },
+          "id": "5fa76bd65e52420f97db0e66d283ae0b319f7580",
+          "message": "fix(satp-hermes): use bigint for ERC-6909/ERC-721 uniqueDescriptor\n\nUniqueTokenID (used for ERC-6909/ERC-721 uniqueDescriptor) was branded\nas number. Since on-chain token IDs are uint256, any value above\nNumber.MAX_SAFE_INTEGER silently loses precision when passed through\nNumber(), corrupting the token ID used for cross-chain asset transfer.\n\nFixes #4703\n\nAssisted-by: anthropic:claude-sonnet-5\nSigned-off-by: luka73 <lukas.mastilak@stuba.sk>",
+          "timestamp": "2026-08-28T13:13:36Z",
+          "url": "https://github.com/abhayrajjais01/cacti/commit/5fa76bd65e52420f97db0e66d283ae0b319f7580"
+        },
+        "date": 1789650340489,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "plugin-ledger-connector-besu_HTTP_GET_getOpenApiSpecV1",
+            "value": 1242,
+            "range": "±2.59%",
+            "unit": "ops/sec",
+            "extra": "181 samples"
           }
         ]
       }
