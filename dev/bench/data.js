@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791219171818,
+  "lastUpdate": 1791472725009,
   "repoUrl": "https://github.com/abhayrajjais01/cacti",
   "entries": {
     "Benchmark": [
@@ -390,6 +390,35 @@ window.BENCHMARK_DATA = {
             "range": "±3.83%",
             "unit": "ops/sec",
             "extra": "184 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Rafael Belchior",
+            "username": "RafaelAPB",
+            "email": "RafaelAPB@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "Rafael Belchior",
+            "username": "RafaelAPB",
+            "email": "RafaelAPB@users.noreply.github.com"
+          },
+          "id": "b50e2a85d172619e4f33195eb9e4b4240c144041",
+          "message": "feat(satp-hermes): update satp to v13\n\nMigrate SATP Hermes to protocol v13 (draft-ietf-satp-core-16):\nJWS envelope signing with pinned ES256 gateway keys, classified\ncredential identities, draft-16 required transfer claims, canonical\nsignature-bound assertion claims, TLS 1.3 secure channel with a\nDEV_MODE escape hatch for test deployments, and the dockerized\ntests migrated onto the locally-built-image pipeline.\n\nAssisted-by: zai:GLM-5.3\nSigned-off-by: Rafael Belchior <rafael.belchior@tecnico.ulisboa.pt>\nSigned-off-by: Rafael Belchior <RafaelAPB@users.noreply.github.com>",
+          "timestamp": "2026-10-06T11:30:21Z",
+          "url": "https://github.com/abhayrajjais01/cacti/commit/b50e2a85d172619e4f33195eb9e4b4240c144041"
+        },
+        "date": 1791472722169,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "plugin-ledger-connector-besu_HTTP_GET_getOpenApiSpecV1",
+            "value": 850,
+            "range": "±3.85%",
+            "unit": "ops/sec",
+            "extra": "179 samples"
           }
         ]
       }
